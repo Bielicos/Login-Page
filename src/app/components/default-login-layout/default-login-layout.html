@@ -1,0 +1,31 @@
+<main>
+    <section class="form-section">
+        <div class="logo">
+            <img src="svg/logo-movit.svg" />
+            <h1>Moveit!</h1>
+        </div>
+        <h2>
+            {{title}}
+        </h2>
+
+        <ng-content></ng-content>
+
+        <div class="btn-wrapper">
+            <button class="btn-primary">
+                {{primaryBtnText}}
+            </button>
+            <div class="divider">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary">
+                {{secondaryBtnText}}
+            </button>
+        </div>
+    </section>
+    <section class="main-section">
+        <h1>You should, MoveIt!</h1>
+        <img src="svg/delivery.svg" />
+    </section>
+</main>
