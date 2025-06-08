@@ -1,5 +1,13 @@
 <app-default-login-layout title="Login into your account" primaryBtnText="Login Now" secondaryBtnText="Signup Now">
     <form [formGroup]="loginForm">
-        <input type="text">
+        <app-primary-input inputName="email" type="email" label="Email Adress" placeHolder="bielico@gmail.com"
+            formControlName="email">
+            <img src="svg/mail.svg" alt="">
+        </app-primary-input>
+        <app-primary-input inputName="password" type="password" label="Password" placeHolder="Enter your password"
+            formControlName="password">
+            <img src="svg/lock.svg" alt="">
+        </app-primary-input>
     </form>
+    <span>Forgot password?</span>
 </app-default-login-layout>

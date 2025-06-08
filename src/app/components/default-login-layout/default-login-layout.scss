@@ -53,10 +53,12 @@ main {
 
         .btn-wrapper {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             width: 100%;
+            margin: 0;
             gap: 25px;
 
             .divider {
@@ -67,6 +69,7 @@ main {
                 gap: 20px;
                 text-transform: uppercase;
                 width: 100%;
+                margin-bottom: 0;
 
                 span {
                     font-size: 14px;
@@ -75,9 +78,13 @@ main {
                 }
 
                 div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     flex-grow: 1;
                     height: 2px;
                     background-color: $gray-bg;
+                    margin-bottom: 0;
                 }
             }
 
