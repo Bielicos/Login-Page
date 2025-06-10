@@ -12,7 +12,7 @@ import { Navigation, Router } from '@angular/router';
   styleUrl: './login.scss'
 })
 export class Login {
-  loginForm!: FormGroup;
+  loginForm: FormGroup;
 
   constructor(
     private router: Router

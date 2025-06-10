@@ -1,4 +1,4 @@
-@import '../../../styles/variables.scss';
+@use '../../../styles/variables';
 
 form {
     width: 100%;
@@ -6,13 +6,14 @@ form {
     flex-direction: column;
     gap: 23px;
     margin-bottom: 10px;
+    margin-top: 45px;
 }
 
 span {
     width: 100%;
     font-size: 14px;
     text-decoration: underline;
-    color: $secondary-color;
+    color: variables.$primary-color;
     text-align: right;
     margin-bottom: 33px;
 }

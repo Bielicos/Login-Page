@@ -1,0 +1,22 @@
+<app-default-login-layout primaryBtnText="Sign up" secondaryBtnText="Login Now" (submit)="submit()"
+    title="Sign in and start today!" (navigate)="navigate()">
+    <form [formGroup]="signupForm">
+        <app-primary-input label="Who are you?" placeHolder="Gabriel Kortschinski" type="text" formControlName="name">
+            <img src="svg/mail.svg" alt="Email Icon">
+        </app-primary-input>
+
+        <app-primary-input label="Email Adress" placeHolder="company@email.com" type="email" formControlName="email">
+            <img src="svg/mail.svg" alt="Email Icon">
+        </app-primary-input>
+
+        <app-primary-input label="Create a password" placeHolder="Enter your password" type="password"
+            formControlName="password">
+            <img src="svg/lock.svg" alt="Lock Icon">
+        </app-primary-input>
+
+        <app-primary-input placeHolder="Repeat yourpassword" type="password" formControlName="passwordRepeat">
+            <img src="svg/lock.svg" alt="Lock Icon">
+        </app-primary-input>
+    </form>
+
+</app-default-login-layout>
