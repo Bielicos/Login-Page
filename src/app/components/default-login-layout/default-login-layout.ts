@@ -23,4 +23,6 @@ export class DefaultLoginLayout {
   navigate() {
     this.onNavigate.emit();
   }
+
+  @Input() esconderElemento: boolean = false;
 }
